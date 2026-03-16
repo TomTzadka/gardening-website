@@ -1,0 +1,178 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "process": "Process",
+    "gallery": "Gallery",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "dictionary": "Plants"
+  },
+  "hero": {
+    "title": "Smart Gardening, Professional Care",
+    "subtitle": "Advanced gardening services for gardens that thrive long-term",
+    "tagline": "Periodic garden maintenance · Hydroponic systems · Pergola construction",
+    "cta": "Leave your details to schedule a visit"
+  },
+  "about": {
+    "title": "Who We Are",
+    "description": "We are a gardening business with a modern approach to garden design and care. Our work combines plant-growing expertise, an understanding of local climate conditions, and advanced cultivation methods including hydroponics. Our goal is to create gardens that feel natural, alive, and pleasant to spend time in — using efficient and smart working methods.",
+    "values": [
+      { "icon": "🌱", "title": "Smart Sustainability", "text": "Advanced eco-friendly gardening methods, including water-efficient hydroponic systems" },
+      { "icon": "✂️", "title": "Professionalism", "text": "Personalised planning for every garden — whether a home garden, patio, or balcony" },
+      { "icon": "💚", "title": "Ongoing Support", "text": "Garden design is just the beginning — we're here for maintenance and periodic care long-term" }
+    ]
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Modern gardening solutions for every garden and every season",
+    "items": [
+      {
+        "icon": "✂️",
+        "title": "Periodic Garden Maintenance",
+        "description": "Professional garden maintenance including plant pruning and shaping, pest and disease treatment, fertilisation, seasonal planting, and irrigation system checks."
+      },
+      {
+        "icon": "💧",
+        "title": "Hydroponic Systems",
+        "description": "Design and installation of hydroponic systems for gardens, balconies, and patios. Water-efficient plant growing with fast, healthy growth — including training and ongoing guidance."
+      },
+      {
+        "icon": "🏡",
+        "title": "Pergola Construction & Garden Design",
+        "description": "Planning and building pergolas that blend naturally with garden design, creating shaded seating areas and integrating climbing plants."
+      },
+      {
+        "icon": "🌿",
+        "title": "Garden Design",
+        "description": "Custom garden design tailored to your space, style, and budget. Gardening solutions that allow plants to develop naturally and efficiently."
+      },
+      {
+        "icon": "🌸",
+        "title": "Seasonal Planting",
+        "description": "Fresh seasonal flowers and plants to keep your garden vibrant and beautiful all year round, adapted to the local climate."
+      },
+      {
+        "icon": "🌳",
+        "title": "Tree & Shrub Pruning",
+        "description": "Professional pruning and shaping of trees and shrubs to maintain the health of your greenery and the beauty of your garden long-term."
+      }
+    ]
+  },
+  "process": {
+    "title": "How We Work",
+    "subtitle": "A clear, professional process from the first meeting to the final result",
+    "steps": [
+      { "number": "01", "title": "Initial Conversation", "description": "We listen to your needs and understand the garden you're dreaming of." },
+      { "number": "02", "title": "Site Visit & Survey", "description": "We visit the garden, assess the site conditions and local climate characteristics." },
+      { "number": "03", "title": "Custom Plan", "description": "We propose a tailored gardening solution — design, hydroponics, pergola, or ongoing maintenance." },
+      { "number": "04", "title": "Build & Execute", "description": "We carry out the work to a high standard, on time and with attention to every detail." },
+      { "number": "05", "title": "Ongoing Support", "description": "We continue to care for the garden as needed, so it stays beautiful and healthy long-term." }
+    ]
+  },
+  "gallery": {
+    "title": "Our Work",
+    "subtitle": "Some of our favourite projects",
+    "items": [
+      {
+        "title": "Home Garden Project",
+        "category": "Garden Design",
+        "folder": "project_01",
+        "image": "photo_2026-03-15 19.16.45.jpeg",
+        "projectImages": [
+          "photo_2026-03-15 19.16.45.jpeg",
+          "photo_2026-03-15 19.16.47.jpeg",
+          "photo_2026-03-15 19.16.48.jpeg",
+          "photo_2026-03-15 19.16.49.jpeg",
+          "photo_2026-03-15 19.16.51.jpeg",
+          "photo_2026-03-15 19.16.53.jpeg"
+        ]
+      },
+      { "title": "Modern Courtyard", "category": "Pergola Construction", "folder": "", "image": "gallery-3.png" },
+      { "title": "Hydroponic System", "category": "Hydroponics", "folder": "", "image": "gallery-4.png" },
+      { "title": "Family Backyard", "category": "Garden Maintenance", "folder": "", "image": "gallery-5.png" },
+      { "title": "Rooftop Garden", "category": "Garden Design", "folder": "", "image": "gallery-6.png" }
+    ]
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "items": [
+      {
+        "name": "Sarah Cohen",
+        "text": "They completely transformed our backyard. The team was professional, creative, and finished on time. Their gardening services are on another level!",
+        "rating": 5,
+        "location": "Tel Aviv"
+      },
+      {
+        "name": "David Levi",
+        "text": "Excellent service from start to finish. The garden design we received suits our lifestyle perfectly. Highly recommended!",
+        "rating": 5,
+        "location": "Jerusalem"
+      },
+      {
+        "name": "Maya Shapiro",
+        "text": "The hydroponic system they installed has saved us so much water and time. The garden has never looked better. Thank you!",
+        "rating": 5,
+        "location": "Haifa"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Want to upgrade your garden?",
+    "subtitle": "Leave your details and we'll get back to you to schedule a no-obligation meeting",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "message": "Tell us about your garden",
+      "submit": "Send Message"
+    },
+    "info": {
+      "phone": "+972-50-123-4567",
+      "email": "info@greenhorizons.co.il",
+      "address": "123 Garden Street, Tel Aviv, Israel",
+      "hours": "Sun–Thu: 08:00–18:00"
+    }
+  },
+  "footer": {
+    "tagline": "Smart gardening, professional care, gardens that thrive long-term",
+    "rights": "All rights reserved"
+  },
+  "dictionary": {
+    "title": "Plant Dictionary",
+    "subtitle": "A guide to growing 100 plants at home — filter by sun, water, category and difficulty",
+    "searchPlaceholder": "Search by plant name...",
+    "noResults": "No plants match your filters",
+    "count": "plants",
+    "filters": {
+      "sun": "Sun",
+      "watering": "Watering",
+      "category": "Category",
+      "difficulty": "Difficulty",
+      "sun_full": "Full sun",
+      "sun_partial": "Partial shade",
+      "sun_shade": "Shade",
+      "water_low": "Low",
+      "water_medium": "Medium",
+      "water_high": "High",
+      "diff_easy": "Easy",
+      "diff_medium": "Medium",
+      "diff_hard": "Hard",
+      "edible": "Edible",
+      "hydroponic": "Hydroponic",
+      "categories": {
+        "indoor": "Indoor",
+        "succulents": "Succulents",
+        "herbs": "Herbs",
+        "vegetables": "Vegetables",
+        "flowers": "Flowers",
+        "climbers": "Climbers",
+        "shrubs": "Shrubs",
+        "fruit_trees": "Fruit trees",
+        "exotic": "Exotic"
+      },
+      "reset": "Clear filters"
+    }
+  }
+}

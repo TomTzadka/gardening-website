@@ -1,0 +1,269 @@
+.plant-dict {
+  min-height: calc(100vh - 70px);
+  background: var(--green-white);
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+
+.plant-dict__header {
+  text-align: center;
+  padding: 3rem 2rem 1.5rem;
+}
+
+/* ── Controls bar ── */
+.plant-dict__controls {
+  position: sticky;
+  top: 68px;
+  z-index: 100;
+  background: var(--white);
+  border-bottom: 1px solid var(--green-mist);
+  padding: 0.9rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  box-shadow: 0 2px 12px rgba(30,80,40,0.07);
+}
+
+.plant-dict__top-row {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.plant-dict__search {
+  flex: 1;
+  min-width: 180px;
+  max-width: 360px;
+  padding: 0.55rem 1rem;
+  border: 2px solid var(--green-mist);
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-family: 'Heebo', sans-serif;
+  outline: none;
+  background: var(--green-white);
+  color: var(--text-dark);
+  transition: border-color 0.2s;
+}
+
+.plant-dict__search:focus {
+  border-color: var(--green-main);
+}
+
+.plant-dict__count {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ── Filter rows ── */
+.plant-dict__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.2rem;
+  align-items: center;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.filter-group--categories {
+  padding-top: 0.2rem;
+  border-top: 1px solid var(--green-mist);
+  width: 100%;
+}
+
+.filter-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-light);
+  white-space: nowrap;
+  margin-left: 0.2rem;
+}
+
+.rtl .filter-label {
+  margin-left: 0;
+  margin-right: 0.2rem;
+}
+
+.filter-btn {
+  background: var(--green-mist);
+  border: 2px solid transparent;
+  color: var(--text-mid);
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: 'Heebo', sans-serif;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  border-color: var(--green-main);
+  color: var(--green-dark);
+}
+
+.filter-btn.active {
+  background: var(--green-main);
+  border-color: var(--green-main);
+  color: var(--white);
+}
+
+.filter-btn--toggle {
+  background: var(--green-white);
+  border-color: var(--green-pale);
+}
+
+.filter-btn--toggle.active {
+  background: var(--green-main);
+  border-color: var(--green-main);
+  color: var(--white);
+}
+
+.filter-reset {
+  background: none;
+  border: 2px solid var(--green-pale);
+  color: var(--text-light);
+  font-size: 0.8rem;
+  font-family: 'Heebo', sans-serif;
+  padding: 0.25rem 0.85rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.filter-reset:hover {
+  border-color: var(--green-main);
+  color: var(--green-dark);
+}
+
+/* ── Plant grid ── */
+.plant-dict__body {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.plant-dict__empty {
+  text-align: center;
+  color: var(--text-light);
+  padding: 4rem 0;
+  font-size: 1.1rem;
+}
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 1.1rem;
+}
+
+/* ── Plant card ── */
+.plant-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 1.3rem 1.1rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--green-mist);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.plant-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.plant-card__emoji {
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+.plant-card__name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--green-dark);
+  margin: 0;
+}
+
+.plant-card__name-he {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin: 0;
+}
+
+.plant-card__desc {
+  font-size: 0.83rem;
+  color: var(--text-light);
+  line-height: 1.55;
+  flex: 1;
+}
+
+.plant-card__meta {
+  font-size: 0.78rem;
+  color: var(--text-light);
+}
+
+.plant-card__height {
+  letter-spacing: 0.2px;
+}
+
+.plant-card__badges {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+/* ── Badges ── */
+.badge {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.badge--sun   { background: #fff8e1; color: #b8860b; }
+.badge--water { background: #e3f2fd; color: #1565c0; }
+
+.badge--diff  { background: var(--green-mist); color: var(--green-dark); }
+.diff--easy   { background: #e8f5e9; color: #2e7d32; }
+.diff--medium { background: #fff3e0; color: #e65100; }
+.diff--hard   { background: #fce4ec; color: #880e4f; }
+
+.badge--edible { background: #fff3e0; color: #e65100; }
+.badge--hydro  { background: #e3f2fd; color: #1565c0; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .plant-dict__controls {
+    padding: 0.7rem 1rem;
+  }
+
+  .plant-dict__body {
+    padding: 1rem;
+  }
+
+  .plant-grid {
+    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .plant-card {
+    padding: 1rem 0.9rem;
+  }
+}
