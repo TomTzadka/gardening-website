@@ -14,6 +14,39 @@ const CATEGORY_EMOJI = {
   exotic:      '🌴',
 }
 
+const IMAGE_EXTS = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg']
+
+function PlantImage({ id, emoji }) {
+  const [src, setSrc] = useState(() => `/images/plants/${id}.jpg`)
+  const [extIdx, setExtIdx] = useState(0)
+  const [failed, setFailed] = useState(false)
+
+  const handleError = () => {
+    const next = extIdx + 1
+    if (next < IMAGE_EXTS.length) {
+      setExtIdx(next)
+      setSrc(`/images/plants/${id}.${IMAGE_EXTS[next]}`)
+    } else {
+      setFailed(true)
+    }
+  }
+
+  if (failed) {
+    return <div className="plant-card__emoji">{emoji}</div>
+  }
+  return (
+    <div className="plant-card__img-wrap">
+      <img
+        src={src}
+        alt=""
+        className="plant-card__img"
+        onError={handleError}
+        loading="lazy"
+      />
+    </div>
+  )
+}
+
 const SUN_ICON    = { full: '☀️', partial: '⛅', shade: '🌥️' }
 const WATER_ICON  = { low: '💧', medium: '💧💧', high: '💧💧💧' }
 const DIFF_COLOR  = { easy: 'diff--easy', medium: 'diff--medium', hard: 'diff--hard' }
@@ -146,7 +179,7 @@ export default function PlantDictionary({ data, lang }) {
           <div className="plant-grid">
             {filtered.map(plant => (
               <div className="plant-card" key={plant.id}>
-                <div className="plant-card__emoji">{CATEGORY_EMOJI[plant.category]}</div>
+                <PlantImage id={plant.id} emoji={CATEGORY_EMOJI[plant.category]} />
                 <div className="plant-card__content">
                   <h3 className="plant-card__name">
                     {lang === 'he' ? plant.name_he : plant.name_en}
